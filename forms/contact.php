@@ -1,6 +1,11 @@
 <?php
 require('phpmailer/class.phpmailer.php');
 
+use assets\vendor\PHPMailer;
+use assets\vendor\Exception;
+
+require 'assets\vendor\Exception.php';
+require 'assets\vendor\SMTP.php';
 $mail = new PHPMailer();
 $mail->IsSMTP();
 $mail->SMTPDebug = 0;
