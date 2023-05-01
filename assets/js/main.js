@@ -177,10 +177,12 @@
     }
   });
 
+//To be uncommented when required!!
+
   /**
    * Porfolio isotope and filter
    */
-  window.addEventListener('load', () => {
+ /* window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
@@ -205,6 +207,7 @@
 
   });
 
+  */ //To be uncommented when required!!
   /**
    * Initiate portfolio lightbox 
    */
