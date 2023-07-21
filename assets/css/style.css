@@ -710,7 +710,7 @@ section .container {
 }
 
 .certificate-wrap img {
-  width: 70%;
+  width: 100%;
   height: auto;
 }
 
@@ -738,6 +738,49 @@ section .container {
   font-size: 14px;
   max-height: 100px;
   overflow: hidden;
+}
+/* Add responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .badges {
+    flex-direction: column;
+    justify-content: center; /* Center the badges vertically */
+    align-items: center; /* Center the badges horizontally */
+  }
+  
+  .badges > div {
+    margin-right: 0;
+    margin-bottom: 20px; /* Add margin at the bottom to create space between items */
+  }
+  
+  .certificate-container {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+  
+  .certificate-wrap {
+    margin-bottom: 0; /* Remove the margin at the bottom for the items in the grid */
+  }
+  
+  .certificate-info {
+    transform: translateY(0); /* Show the certificate info without hover */
+  }
+}
+
+/* Add responsive styles for medium screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .badges {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .badges > div {
+    margin-bottom: 20px; /* Add margin at the bottom to create space between rows */
+    flex-basis: calc(50% - 20px); /* Display two badges per column with a margin between them */
+  }
+  
+  .certificate-container {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
