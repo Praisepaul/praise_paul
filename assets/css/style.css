@@ -675,7 +675,7 @@ section .container {
 /* Certifications */
 .badges {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .badges > div {
