@@ -843,6 +843,28 @@ section .container {
   background: #18d26e;
   border: 2px solid #18d26e;
 }
+/*--------------------------------------------------------------
+# Download Button
+--------------------------------------------------------------*/
+.btn_resume_download {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 999;
+}
+.btn_resume_download:hover {
+  background-color: #18d26e;
+}
+.btn-icon {
+  margin-left: 10px;
+}
 
 /*--------------------------------------------------------------
 # Services

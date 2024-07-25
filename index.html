@@ -201,7 +201,7 @@
             </div>
             <div class="col-lg-6">
               <ul>
-                <li><box-icon name='chevrons-right' color='#ffffff'></box-icon> <strong>Age:</strong> <span>20</span>
+                <li><box-icon name='chevrons-right' color='#ffffff'></box-icon> <strong>Age:</strong> <span>22</span>
                 </li>
                 <li><box-icon name='chevrons-right' color='#ffffff'></box-icon> <strong>Degree:</strong> <span>B.Tech Computer Science Engineering
                     , VIT University</span></li>
@@ -614,18 +614,21 @@
   <!-- ======= Resume Section ======= -->
   <section id="resume" class="resume">
     <div class="container">
-
       <div class="section-title">
-        <h2>Resume</h2>
-        <p>Check My Resume</p>
+        
+        <button class="btn_resume_download" onclick="downloadResume()" title="Download Resume">
+          Download Resume
+          <box-icon name='download' color='#ffffff' class="btn-icon"></box-icon>
+        </button>
       </div>
 
       <div class="row">
         <div class="col-lg-6">
-          <h3 class="resume-title">Sumary</h3>
+          
+          <h3 class="resume-title">Summary</h3>
           <div class="resume-item pb-0">
             <h4>Praise Paul</h4>
-            <p><em>Praise, an energetic and ambitious 21-year-old, embodies a diverse cultural background.
+            <p><em>Praise, an energetic and ambitious 22-year-old, embodies a diverse cultural background.
                 Born as a Malayalee and raised as a Kannadiga, he hails from the rural area of Byndoor, He is
                 pursuing a degree in Computer Science and Engineering at Vellore Institute of Technology, Amaravati,
                 with a clear vision to become a Cyber Security Analyst. His dedication to his studies earned him the
@@ -652,9 +655,8 @@
             <p><em>Vellore Institute of Technology, Amaravati</em></p>
             <p>
             <ul>
-              <li>9.03 CGPA</li>
-              <li>Worked on Automated Street Light System with Arduino.</li>
-              <li>Worked on AI powered Online Proctoring Exam Portal.</li>
+              <li>8.82 CGPA</li>
+              <li>Worked on various real-world projects</li>
               <li>Technical Lead, Microsoft Student Chapter.</li>
               <li>Technical Lead, National Service Scheme.</li>
               <li>Co-Lead, VPROJECTS - Computer Society of India.</li>
@@ -692,7 +694,7 @@
             </p>
           </div>
           <div class="resume-item">
-            <h4>Graphic Design Intern</h4>
+            <h4>Graphic Design Freelance Intern</h4>
             <h5>February 2022 - July 2023</h5>
             <p><em>Vahani Scholarship Foundation, New Delhi </em></p>
             <p>
@@ -717,6 +719,18 @@
           </div>
           <div class="resume-item">
             <h4>Web Developer Intern</h4>
+            <h5>May 2022 - July 2022</h5>
+            <p><em>Paul Technologies, Udupi</em></p>
+            <p>
+            <ul>
+              <li>Built various websites for the clients.</li>
+              <li>Was responsible in leading a team of other eight interns</li>
+              <li>Acquired time management skills and leadership qualities</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Web Developer Intern</h4>
             <h5>Jan 2022 - Jan 2022</h5>
             <p><em>Peakpals, New Delhi</em></p>
             <p>
@@ -724,18 +738,6 @@
               <li>Developed website for Peakpals.</li>
               <li>Lead a team of four other interns.</li>
               <li>Managed and handled the client support center</li>
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Web Developer Intern</h4>
-            <h5>March 2020 - December 2021</h5>
-            <p><em>Paul Technologies, Udupi</em></p>
-            <p>
-            <ul>
-              <li>Built various websites for the clients.</li>
-              <li>Was responsible in leading a team of other eight interns</li>
-              <li>Acquired time management skills and leadership qualities</li>
             </ul>
             </p>
           </div>
@@ -839,8 +841,46 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
           <div class="icon-box">
+            <div><img src="assets/img/video_chat.webp" style="width: 150px; height: 80px;"></div>
+            <h4>Video Chat App</h4>
+            <p style="text-align: justify;">This project develops a real-time Video Chat Application utilizing the MERN 
+              stack (MongoDB, Express.js, React.js, Node.js). It features secure user authentication, high-quality video 
+              and audio streaming through WebRTC, and a responsive user interface. The app supports one-on-one and group 
+              video calls, along with functionalities like screen sharing and chat messaging. Built for scalability and 
+              performance, it ensures a seamless and intuitive user experience for both personal and professional 
+              communication needs.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div><img src="assets/img/health_monitor.webp" style="width: 150px; height: 80px;"></div>
+            <h4><a href="">Health Monitoring App</a></h4>
+            <p style="text-align: justify;">LifeGuard SOS is an advanced Emergency Health Monitoring System designed to 
+              provide real-time health tracking and immediate emergency response. The system integrates wearable health 
+              devices with a mobile application to continuously monitor vital signs such as heart rate, blood pressure, 
+              and oxygen levels. In case of abnormal readings or emergencies, it automatically alerts medical personnel 
+              and designated contacts, providing real-time location and health data for prompt intervention. LifeGuard SOS 
+              aims to enhance personal safety and ensure timely medical assistance in critical situations.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="icon-box">
+            <div><img src="assets/img/money_manager.webp" style="width: 150px; height: 80px;"></div>
+            <h4><a href="">Personal Money Manager</a></h4>
+            <p style="text-align: justify;"> The Personal Money Manager is a comprehensive financial tracking and budgeting 
+              application designed to help users efficiently manage their finances. It provides tools for tracking income, 
+              expenses, and savings, creating and monitoring budgets, and generating financial reports. With features such as
+               expense categorization, automatic transaction import, and financial goal setting, the app empowers users to 
+               gain insights into their spending habits and make informed financial decisions. The Personal Money Manager aims
+                to simplify personal finance management and promote better financial health.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
             <div><img src="assets/img/forensics_projects.webp" style="width: 150px; height: 80px;"></div>
-            <h4>Multimedia Forensics Using Cloud</h4>
+            <h4>Image Forensics Using Cloud</h4>
             <p style="text-align: justify;">Image forgery detection is a critical area of research in digital image
               forensics. This project presents an enhanced Image Forgery Detection system that incorporates Copy-Move
               Forgery Detection to address the challenges posed by various image manipulation techniques. The proposed
@@ -850,7 +890,6 @@
               Detection. </p>
           </div>
         </div>
-
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
           <div class="icon-box">
             <div><img src="assets/img/exam_portal.webp" style="width: 150px; height: 80px;"></div>
@@ -1143,7 +1182,17 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  
+<script>
+  function downloadResume() {
+    var link = document.createElement('a');
+    link.href = 'https://drive.google.com/uc?export=download&id=1fhH3zmrKuzjx3joT1dfBBIE5dQnW8oRR';
+    link.download = 'resume.pdf'; // Optional: specify a name for the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
 </body>
 
 </html>
