@@ -527,7 +527,42 @@ section .container {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skills .progress {
+
+/* Ensure the radar chart is large and centered properly */
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 850px;  /* allows more spread */
+  min-height: 600px; /* ensures enough vertical room */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* let Chart.js canvas expand naturally inside Bootstrap */
+.chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Align paragraph side perfectly in large screens */
+@media (min-width: 992px) {
+  .skills-content {
+    display: flex;
+    align-items: center; /* vertically centers chart + text */
+  }
+  .skills-content .col-lg-6:first-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding-right: 40px;
+  }
+  .skills-content .col-lg-6:last-child {
+    padding-left: 40px;
+  }
+}
+
+
+/*.skills .progress {
   height: 60px;
   display: block;
   background: none;
@@ -559,7 +594,7 @@ section .container {
   transition: 0.9s;
   background-color: #18d26e;
 }
-
+*/
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
@@ -1134,3 +1169,4 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
